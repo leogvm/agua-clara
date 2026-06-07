@@ -1,0 +1,295 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agua Clara | Filtro de Agua Ecológico</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4faff;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0096c7,#2d6a4f);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+header h1{
+    font-size:4rem;
+}
+
+header p{
+    font-size:1.3rem;
+    margin-top:15px;
+}
+
+nav{
+    background:white;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#0077b6;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    color:#0077b6;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    width:280px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.hero-image{
+    width:100%;
+    max-width:900px;
+    display:block;
+    margin:30px auto;
+    border-radius:20px;
+}
+
+.steps{
+    max-width:900px;
+    margin:auto;
+}
+
+.steps li{
+    margin:15px 0;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.stat{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat h3{
+    color:#2d6a4f;
+    font-size:2rem;
+}
+
+footer{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.team{
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:white;
+    color:#0077b6;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>💧 Agua Clara</h1>
+    <p>Agua más limpia, vida más saludable</p>
+
+    <a href="#solucion" class="btn">Conoce nuestro proyecto</a>
+</header>
+
+<nav>
+<ul>
+<li><a href="#problema">Problema</a></li>
+<li><a href="#solucion">Solución</a></li>
+<li><a href="#beneficios">Beneficios</a></li>
+<li><a href="#proceso">Proceso</a></li>
+<li><a href="#encuesta">Encuesta</a></li>
+<li><a href="#equipo">Equipo</a></li>
+</ul>
+</nav>
+
+<section id="problema">
+<h2>El Problema</h2>
+
+<img class="hero-image"
+src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=1200"
+alt="Agua">
+
+<p style="text-align:center; max-width:900px; margin:auto;">
+Muchas personas tienen acceso a agua que puede contener impurezas, sedimentos
+o contaminantes. Los sistemas de purificación comerciales suelen ser costosos,
+por lo que muchas familias continúan consumiendo agua de calidad dudosa.
+</p>
+
+</section>
+
+<section id="solucion" style="background:white;">
+<h2>Nuestra Solución</h2>
+
+<p style="max-width:900px; margin:auto; text-align:center;">
+Agua Clara es un filtro de agua ecológico y económico diseñado para mejorar
+la calidad del agua utilizando materiales accesibles como grava, arena,
+carbón activado y algodón filtrante.
+</p>
+</section>
+
+<section id="beneficios">
+<h2>Beneficios</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>💰 Económico</h3>
+<p>Reduce gastos en agua embotellada y sistemas costosos.</p>
+</div>
+
+<div class="card">
+<h3>🌱 Ecológico</h3>
+<p>Promueve el cuidado del medio ambiente y el uso responsable de recursos.</p>
+</div>
+
+<div class="card">
+<h3>🚰 Agua más limpia</h3>
+<p>Ayuda a eliminar impurezas y sedimentos presentes en el agua.</p>
+</div>
+
+<div class="card">
+<h3>🛠 Fácil de usar</h3>
+<p>Diseño sencillo y accesible para cualquier persona.</p>
+</div>
+
+</div>
+</section>
+
+<section id="proceso" style="background:white;">
+<h2>Proceso de Filtración</h2>
+
+<ol class="steps">
+<li><strong>Algodón:</strong> Retiene partículas grandes.</li>
+<li><strong>Carbón activado:</strong> Reduce olores e impurezas.</li>
+<li><strong>Arena:</strong> Filtra sedimentos pequeños.</li>
+<li><strong>Grava:</strong> Detiene residuos de mayor tamaño.</li>
+<li><strong>Agua filtrada:</strong> Sale más limpia y clara.</li>
+</ol>
+
+</section>
+
+<section id="encuesta">
+<h2>Resultados de la Encuesta</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>96%</h3>
+<p>Considera importante la calidad del agua.</p>
+</div>
+
+<div class="stat">
+<h3>84%</h3>
+<p>Ha tenido dudas sobre el agua que consume.</p>
+</div>
+
+<div class="stat">
+<h3>86%</h3>
+<p>Considera costosos los filtros actuales.</p>
+</div>
+
+<div class="stat">
+<h3>92%</h3>
+<p>Quiere una alternativa económica.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<p style="text-align:center;">
+Aquí puedes agregar las gráficas exportadas desde Google Sheets.
+</p>
+
+</section>
+
+<section id="equipo" style="background:white;">
+<h2>Nuestro Equipo</h2>
+
+<div class="team">
+<p><strong>Proyecto Escolar:</strong> Agua Clara</p>
+<p>Comprometidos con soluciones innovadoras para el acceso a agua de mejor calidad.</p>
+<p>Agrega aquí los nombres de los integrantes.</p>
+</div>
+
+</section>
+
+<footer>
+<h3>💧 Agua Clara</h3>
+<p>Filtro de Agua Ecológico y Accesible</p>
+<p>Proyecto enfocado en el ODS 6: Agua Limpia y Saneamiento</p>
+</footer>
+
+</body>
+</html>
+```
